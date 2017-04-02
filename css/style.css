@@ -1,0 +1,35 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.calculator {
+	width: 100%;
+
+}
+.cal {
+
+	padding: 40px;
+	margin: 0 auto;
+	float: none;
+}
+
+#Calc {
+	width: 100%;
+	padding: 25px 20px;
+	margin-bottom: 15px;
+	text-align: right;
+	font-weight: 500;
+	font-size: 35px;
+	border-radius: 6px;
+
+}
+.calculator button{
+	width: 25%;
+	padding: 20px 0;
+	float: left;
+	font-weight: 500;
+	font-size: 50px;
+	border-radius: 5px;
+}

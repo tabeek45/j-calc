@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculator</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
+  </head>
+
+  <body>
+
+  	<section class="calculator">
+
+	        <div class="container">
+	            
+	            <div class="col-lg-5 cal">
+	               
+	               <div class="row">
+
+	                     <input type="text" name="" id="Calc">
+
+	                     <button type="button" onclick="ClickSeven()">7</button>
+	                     <button type="button" onclick="ClickEight()">8</button>
+	                     <button type="button" onclick="ClickNine()">9</button>
+	                     <button type="button" onclick="ClickDivd()">/</button>
+
+	                     <button type="button" onclick="ClickFour()">4</button>
+	                     <button type="button" onclick="ClickFive()">5</button>
+	                     <button type="button" onclick="ClickSix()">6</button>
+	                     <button type="button" onclick="ClickMultp()">*</button>
+
+	                     <button type="button" onclick="ClickOne()">1</button>
+	                     <button type="button" onclick="ClickTwo()">2</button>
+	                     <button type="button" onclick="ClickThree()">3</button>
+	                     <button type="button" onclick="ClickMins()">-</button>
+
+	                     <button type="button" onclick="ClickClear()">C</button>
+	                     <button type="button" onclick="ClickZero()">0</button>
+	                     <button type="button" onclick="ClickEqu()">=</button>
+	                     <button type="button" onclick="ClickPlus()">+</button>
+	                     
+	                </div>
+
+	          </div>
+
+	        </div>
+
+      </section>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    	
+    	function ClickSeven(){
+			document.getElementById("Calc").value +=7;
+		}
+		function ClickEight(){
+			document.getElementById("Calc").value +=8;
+		}
+		function ClickNine(){
+			document.getElementById("Calc").value +=9;
+		}
+		function ClickFour(){
+			document.getElementById("Calc").value +=4;
+		}
+		function ClickFive(){
+			document.getElementById("Calc").value +=5;
+		}
+		function ClickSix(){
+			document.getElementById("Calc").value +=6;
+		}
+		function ClickOne(){
+			document.getElementById("Calc").value +=1;
+		}
+		function ClickTwo(){
+			document.getElementById("Calc").value +=2;
+		}
+		function ClickThree(){
+			document.getElementById("Calc").value +=3;
+		}
+		function ClickZero(){
+			document.getElementById("Calc").value +=0;
+		}
+		function ClickDivd(){
+			document.getElementById("Calc").value +="/";
+		}
+		function ClickMultp(){
+			document.getElementById("Calc").value +="*";
+		}
+		function ClickMins(){
+			document.getElementById("Calc").value +="-";
+		}
+		function ClickPlus(){
+			document.getElementById("Calc").value +="+";
+		}
+		function ClickEqu(){
+			var Reslt = eval(document.getElementById("Calc").value);
+			document.getElementById("Calc").value =Reslt;
+		}
+		function ClickClear(){
+			document.getElementById("Calc").value ="";
+
+		}
+
+    </script>
+
+  </body>
+
+</html>
